@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* align-items: center; */
+    background: linear-gradient(320deg, #eb92ba, #ffef78, #63c9b4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    /* height: inherit; */
+    align-items: center;
+}
+.box {
+    width: 70%;
+    /* height: 90%; */
+    /* background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.30); */
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    padding: 30px 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+    margin: 50px 0;
+}
+
+.box a {
+    text-decoration: none;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box a:hover {
+    background: linear-gradient(320deg, #eb92ba, #ffef78, #63c9b4);;
+}
+
+.box a .folder {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+.box a .folder img {
+    width: 100px;
+    height: 100px;
+}
+
+.box a .folder span {
+    font-size: 3em;
+    padding: 25px 20px;
+    color: #232323;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+@media (max-width: 1050px) {
+    .box a .folder span {
+        font-size: 2em;
+    }
+    .box {
+        width: 80%;
+    }
+    .box a .folder img {
+        width: 70px;
+        height: 70px;
+    }
+    .box a .folder span {
+        padding: 15px 5px 20px 15px;
+    }
+}
+
+@media (max-width: 600px) {    
+    .box {
+        width: 95%;
+    }
+}
